@@ -9,9 +9,7 @@ The Weather Dashboard is a web application that allows users to search for curre
 ## Features
 
 - **Search for Cities:** Users can enter any city name to get current weather details.
-- **Five-Day Forecast:** Displays a five-day weather forecast for the searched city.
 - **User-Friendly Interface:** Clean and responsive design for a seamless user experience.
-- **History Tracking:** Keeps track of previously searched cities for quick access.
 
 ## Technologies Used
 
