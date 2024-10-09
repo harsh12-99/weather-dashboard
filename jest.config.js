@@ -1,12 +1,16 @@
-module.exports = {
-  preset: "ts-jest",
-  testEnvironment: "jsdom",
-  moduleNameMapper: {
-    // Handle CSS imports (e.g., CSS Modules, styled-components)
-    "\\.(css|less|scss|sass)$": "identity-obj-proxy",
-    // Handle image imports
-    "\\.(png|jpg|jpeg|gif|svg)$": "jest-transform-stub",
-  },
+// jest.config.js
+const nextJest = require("next/jest");
+
+const createJestConfig = nextJest({
+  dir: "./",
+});
+
+const customJestConfig = {
   setupFilesAfterEnv: ["<rootDir>/setupTests.ts"],
-  testPathIgnorePatterns: ["/node_modules/", "<rootDir>/.next/"],
+  testEnvironment: "jsdom",
+  collectCoverage: true,
+  coverageDirectory: "coverage",
+  coverageReporters: ["json", "lcov", "text"],
 };
+
+module.exports = createJestConfig(customJestConfig);

@@ -42,7 +42,7 @@ test("renders weather data", () => {
     <CityWeather weather={mockWeatherData} error={null} loading={false} />
   );
 
-  expect(screen.getByText(/london/i)).toBeInTheDocument();
+  expect(screen.getByText(/Indore/i)).toBeInTheDocument();
   expect(screen.getByText(/temperature:/i)).toHaveTextContent(
     "Temperature: 15 °C"
   );
