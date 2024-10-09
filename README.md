@@ -27,3 +27,26 @@ To run the Weather Dashboard locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/harsh12-99/weather-dashboard.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd weather-dashboard
+
+3. Install the dependencies:
+   ```bash
+   npm install
+
+4. Run the solution:
+   ```bash
+   npm run dev
+
+## Usage
+1. Enter a city name in the search bar.
+2. The current weather conditions.
+
+## Contributing
+Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.
+
+## Acknowledgments
+- OpenWeatherMap for providing the weather data API.
+- Inspiration from various weather applications. 
